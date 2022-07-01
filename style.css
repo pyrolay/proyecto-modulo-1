@@ -1,0 +1,116 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 70px;
+    padding: 10px 0;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px 0px;
+    position: fixed;
+    top: 0;
+    background-color: white;
+}
+
+.navbar {
+    display: flex;
+    justify-content: flex-end;
+    width: 1100px;
+}
+
+.navbar ul {
+    height: 100%;
+    min-width: 50%;
+    max-width: 1100px;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar a {
+    color: #5c5c5e;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.navbar .contacto a{
+    margin: 0;
+    color: white;
+    background-color: #4d2c88;
+    padding: 10px 30px;
+    border-radius: 30px;
+}
+
+.navbar a:hover {
+    color: #dd306d;
+}
+
+.navbar .contacto:hover a {
+    color: white;
+    background-color: #dd306d;
+}
+
+#sobre .contenedor {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 150px 0px;
+}
+
+#sobre figure {
+    min-width: 700px;
+}
+
+#sobre figure img {
+    width: 100%;
+}
+
+h1 {
+    font-size: 4.5em;
+    font-weight: 900;
+    background: url(images/fondo-titulo.webp);
+    background-size: contain;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    cursor: default;
+    margin: 10px 0;
+}
+
+h1:hover {
+    background: url(images/fondo-titulo-dos.jpg);
+    background-size: contain;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+
+p {
+    color: #5c5c5e;
+}
+
+#sobre .hola-soy {
+    font-weight: 800;
+    font-size: 2em;
+    color: #2e2e31;
+}
+
+#sobre .contenedor a {
+    display: inline-block;
+    background-color: #4d2c88;
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    border-radius: 30px;
+    font-weight: 500;
+    margin-top: 30px;
+    padding: 16px 50px;
+}
+
+#sobre .contenedor a:hover {
+    background-color: #dd306d;
+}

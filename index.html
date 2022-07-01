@@ -7,29 +7,35 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;800;900&display=swap" rel="stylesheet">
     <title>Micaela Lay</title>
 </head>
 <body>
     <header>
-        <nav>
+        <nav class="navbar">
             <ul>
-                <li><a href="#about">Hola</a></li>
+                <li><a href="#sobre">Hola</a></li>
                 <li><a href="#conocimientos">Conocimientos</a></li>
                 <li><a href="#proyectos">Proyectos</a></li>
-                <li><a href="#contacto">Contacto</a></li>
+                <li class="contacto"><a href="#contacto">Contacto</a></li>
             </ul>
         </nav>
     </header>
 
-    <section id="about">
-        <div>
-            <h1>¡Hola! Soy <span>Micaela Lay</span></h1>
-            <p>Desarrolladora y fan de mi gatita Micha</p>
-            <a href="">Lo que hago</a>
+    <section id="sobre">
+        <div class="contenedor">
+            <div>
+                <p class="hola-soy">¡Hola! Soy</p>
+                <h1>Micaela Lay</h1>
+                <p>Desarrolladora y fan de mi gatita Micha</p>
+                <a href="#">Lo que hago</a>
+            </div>
+            <figure>
+                <img src="images/sobre.svg" alt="...">
+            </figure>
         </div>
-        <figure>
-            <img src="images/about.svg" alt="Imagen principal en modo de dibujo donde se visualiza una mujer tocando una pantalla mucho más grande que ella.">
-        </figure>
     </section>
 
     <section id="conocimientos">
@@ -38,35 +44,37 @@
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt ab placeat vitae dolores exercitationem, eum similique et.</p>
         </div>
         <div>
-            <div class="card">
-                <i class="devicon-html5-plain colored"></i>
-                <h3>HTML 5</h3>
-            </div>
+            <ul>
+                <li class="card">
+                    <i class="devicon-html5-plain colored"></i>
+                    <h3>HTML 5</h3>
+                </li>
 
-            <div class="card">
-                <i class="devicon-css3-plain colored"></i>
-                <h3>CSS 3</h3>
-            </div>
+                <li class="card">
+                    <i class="devicon-css3-plain colored"></i>
+                    <h3>CSS 3</h3>
+                </li>
 
-            <div class="card">
-                <i class="devicon-sass-original colored"></i>
-                <h3>Sass</h3>
-            </div>
+                <li class="card">
+                    <i class="devicon-sass-original colored"></i>
+                    <h3>Sass</h3>
+                </li>
 
-            <div class="card">
-                <i class="devicon-javascript-plain colored"></i>
-                <h3>JavaScript</h3>
-            </div>
+                <li class="card">
+                    <i class="devicon-javascript-plain colored"></i>
+                    <h3>JavaScript</h3>
+                </li>
 
-            <div class="card">
-                <i class="devicon-react-original colored"></i>
-                <h3>React</h3>
-            </div>
+                <li>
+                    <i class="devicon-react-original colored"></i>
+                    <h3>React</h3>
+                </li>
 
-            <div class="card">
-                <i class="devicon-git-plain colored"></i>
-                <h3>GIT</h3>
-            </div>
+                <li>
+                    <i class="devicon-git-plain colored"></i>
+                    <h3>GIT</h3>
+                </li>
+            </ul>
         </div>
     </section>
 
@@ -76,74 +84,76 @@
         <h3>Someone</h3>
     </section>
 
-    <section class="proyectos">
+    <section id="proyectos">
         <div>
             <h2>Mis proyectos</h2>
             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Commodi reiciendis deserunt reprehenderit mollitia, optio voluptatem?</p>
         </div>
-        <div>
-            <div>
-                <a href="">
-                    <figure>
+        <div> <!--meter en otra listaaa-->
+            <ul>
+                <li>
+                    <a href="">
+                        <figure>
+    
+                        </figure>
+                        <h3>Portfolio</h3>
+                    </a>
+                </li>
+                
+                <li>
+                    <a href="">
+                        <figure>
+                            <img src="images/generador-de-memes.svg" alt="Dibujo de una mujer mirando al frente con un teléfono más grande detrás de ella. Se vería como la mujer apunta a este. El teléfono tendría opciones para seleccionar distintas gamas de colores.">
+                        </figure>
+                        <h3>Generador de memes</h3>
+                    </a>
+                </li>
 
-                    </figure>
-                    <h3>Portfolio</h3>
-                </a>
-            </div>
+                <li>
+                    <a href="">
+                        <figure>
+                            <img src="images/match-3.svg" alt="Dibujo de dos personas frente a un control joystick más grande que ellos, estarían mirándolo.">
+                        </figure>
+                        <h3>Match 3</h3>
+                    </a>
+                </li>
 
-            <div>
-                <a href="">
-                    <figure>
-                        <img src="images/generador-de-memes.svg" alt="Dibujo de una mujer mirando al frente con un teléfono más grande detrás de ella. Se vería como la mujer apunta a este. El teléfono tendría opciones para seleccionar distintas gamas de colores.">
-                    </figure>
-                    <h3>Generador de memes</h3>
-                </a>
-            </div>
+                <li>
+                    <a href="">
+                        <figure>
+                            <img src="images/controlador-de-gastos.svg" alt="Dibujo de tres personas colgando imágenes, estas imágenes tendrían distintas estadísticas.">
+                        </figure>
+                        <h3>Controlador de gastos</h3>
+                    </a>
+                </li>
 
-            <div>
-                <a href="">
-                    <figure>
-                        <img src="images/match-3.svg" alt="Dibujo de dos personas frente a un control joystick más grande que ellos, estarían mirándolo.">
-                    </figure>
-                    <h3>Match 3</h3>
-                </a>
-            </div>
+                <li>
+                    <a href="">
+                        <figure>
+                            <img src="images/administrador-de-reuniones.svg" alt="...">
+                        </figure>
+                        <h3>Administrador de reuniones</h3>
+                    </a>
+                </li>
 
-            <div>
-                <a href="">
-                    <figure>
-                        <img src="images/controlador-de-gastos.svg" alt="Dibujo de tres personas colgando imágenes, estas imágenes tendrían distintas estadísticas.">
-                    </figure>
-                    <h3>Controlador de gastos</h3>
-                </a>
-            </div>
+                <li>
+                    <a href="">
+                        <figure>
+                            <img src="images/to-do-app.svg" alt="...">
+                        </figure>
+                        <h3>To-do app</h3>
+                    </a>
+                </li>
 
-            <div>
-                <a href="">
-                    <figure>
-                        <img src="images/administrador-de-reuniones.svg" alt="...">
-                    </figure>
-                    <h3>Administrador de reuniones</h3>
-                </a>
-            </div>
-
-            <div>
-                <a href="">
-                    <figure>
-                        <img src="images/to-do-app.svg" alt="...">
-                    </figure>
-                    <h3>To-do app</h3>
-                </a>
-            </div>
-
-            <div>
-                <a href="">
-                    <figure>
-                        <img src="images/buscador-de-peliculas.svg" alt="...">
-                    </figure>
-                    <h3>Buscador de películas</h3>
-                </a>
-            </div>
+                <li>
+                    <a href="">
+                        <figure>
+                            <img src="images/buscador-de-peliculas.svg" alt="...">
+                        </figure>
+                        <h3>Buscador de películas</h3>
+                    </a>
+                </li>
+            </ul>
         </div>
     </section>
 
