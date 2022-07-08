@@ -96,68 +96,54 @@
                     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Commodi reiciendis deserunt reprehenderit mollitia, optio voluptatem?</p>
                 </div>
                 <div class="cards">
-                    <ul>
+                    <ul>  <!--falta alt-->
                         <li>
-                            <figure> <!--falta alt-->
-                                <a href="#sobre">
-                                    <img src="images/portfolio.jpg" alt="">
-                                </a>
-                            </figure>
-                            <p>Portfolio</p>
+                            <a href="#sobre">
+                                <img src="images/portfolio.png" alt="">
+                                <p>Portfolio</p>
+                            </a>
                         </li>
 
                         <li>
-                            <figure>
-                                <a href="#">
-                                    <img src="images/generador-de-memes.png" alt="">
-                                </a>
-                            </figure>
-                            <p>Generador de memes</p>
+                            <a href="#">
+                                <img src="images/generador-de-memes.png" alt="">
+                                <p>Generador de memes</p>
+                            </a>
                         </li>
 
                         <li>
-                            <figure>
-                                <a href="#">
-                                    <img src="images/match-3.png" alt="">
-                                </a>
-                            </figure>
-                            <p>Match 3</p>
+                            <a href="#">
+                                <img src="images/match-3.png" alt="">
+                                <p>Match 3</p>
+                            </a>
                         </li>
 
                         <li>
-                            <figure>
-                                <a href="#">
-                                    <img src="images/controlador-de-gastos.png" alt="">
-                                </a>
-                            </figure>
-                            <p>Controlador de gastos</p>
+                            <a href="#">
+                                <img src="images/controlador-de-gastos.png" alt="">
+                                <p>Controlador de gastos</p>
+                            </a>
                         </li>
 
                         <li>
-                            <figure>
-                                <a href="#">
-                                    <img src="images/administrador-de-reuniones.png" alt="">
-                                </a>
-                            </figure>
-                            <p>Administrador de reuniones</p>
+                            <a href="#">
+                                <img src="images/administrador-de-reuniones.png" alt="">
+                                <p>Administrador de reuniones</p>
+                            </a>
                         </li>
 
                         <li>
-                            <figure>
-                                <a href="#">
-                                    <img src="images/to-do-list.png" alt="">
-                                </a>
-                            </figure>
-                            <p>To do app</p>
+                            <a href="#">
+                                <img src="images/to-do-list.png" alt="">
+                                <p>To do app</p>
+                            </a>
                         </li>
 
                         <li>
-                            <figure>
-                                <a href="#">
-                                    <img src="images/buscador-de-peliculas.png" alt="">
-                                </a>
-                            </figure>
-                            <p>Buscador de películas</p>
+                            <a href="#">
+                                <img src="images/buscador-de-peliculas.png" alt="">
+                                <p>Buscador de películas</p>
+                            </a>
                         </li>
                     </ul>
                 </div>
@@ -190,7 +176,27 @@
                 </div>
                 <div>
                     <h2>Escribeme</h2>
-                    <!--formulario-->
+                    <form action="#">
+                        <div>
+                            <div>
+                                <label for="nombre">Nombre *</label>
+                                <input required type="text" id="nombre" name="nombre" placeholder="p. ej.: Micaela">
+                            </div>
+                            <div>
+                                <label for="apellido">Apellido *</label>
+                                <input required type="text" id="apellido" name="apellido" placeholder="p. ej.: Lay">
+                            </div>
+                        </div>
+                        <div>
+                            <label for="email">Email *</label>
+                            <input required type="email" id="email" name="email" placeholder="p. ej.: micalay003@gmail.com">
+                        </div>
+                        <div>
+                            <label for="mensaje">Mensaje *</label>
+                            <textarea required name="mensaje" id="mensaje" cols="30" rows="10" placeholder="Escriba un mensaje aquí"></textarea>
+                        </div>
+                        <input type="submit">
+                    </form>
                 </div>
             </div>
         </section>
