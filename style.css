@@ -304,6 +304,14 @@ cite {
     font-weight: 500;
 }
 
+#contacto .contenedor {
+    display: flex;
+}
+
+#contacto .contacto, .formulario {
+    width: 50%;
+}
+
 @media (max-width: 1100px) {
 
     header {
