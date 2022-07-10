@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     font-family: 'Montserrat', sans-serif;
+    line-height: 1.5;
 }
 
 html {
@@ -96,7 +97,9 @@ h1 {
     background: url(images/fondo-titulo.webp);
     background-size: contain;
     -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
     -webkit-background-clip: text;
+    -moz-background-clip: text;
     cursor: default;
     margin: 10px 0;
 }
@@ -105,7 +108,9 @@ h1:hover {
     background: url(images/fondo-titulo-dos.jpg);
     background-size: contain;
     -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
     -webkit-background-clip: text;
+    -moz-background-clip: text;
 }
 
 p {
@@ -244,6 +249,7 @@ cite {
 }
 
 #proyectos .texto {
+    max-width: 1100px;
     text-align: center;
     width: 400px;
 }
@@ -267,7 +273,7 @@ cite {
 }
 
 #proyectos li {
-    width: 32%;
+    width: 332px;
     margin: 10px 0;
     box-sizing: border-box;
 }
@@ -301,18 +307,113 @@ cite {
 }
 
 #proyectos .cards p {
-    font-weight: 500;
+    font-weight: 600;
+}
+
+#contacto {
+    display: flex;
+    justify-content: center;
+    background-color: #f6f7fb;
+    padding: 200px;
+}
+
+#contacto h2 {
+    font-size: 3rem;
+    margin-bottom: 30px;
 }
 
 #contacto .contenedor {
+    max-width: 1100px;
     display: flex;
+    background-color: white;
+    padding: 50px;
 }
 
-#contacto .contacto, .formulario {
-    width: 50%;
+#contacto .contactame, .formulario {
+    max-width: 50%;
+}
+
+.contactame {
+    padding-right: 25px;
+}
+
+.contactame p {
+    color: black;
+    margin-right: 50px;
+}
+
+.contactame ul {
+    list-style: none;
+    margin: 50px 25px;
+}
+
+.contactame li {
+    margin-bottom: 30px;
+    display: flex;
+    align-items: center;
+}
+
+.contactame li a {
+    text-decoration: none;
+    color: black;
+}
+
+.contactame li i {
+    color: #4d2c88;
+    margin-right: 10px;
+    padding: 10px;
+    border-radius: 50%;
+}
+
+.contactame li:hover i {
+    color: white;
+    background-color: #4d2c88;
+}
+
+.contactame li:hover a {
+    color: #4d2c88;
+}
+
+form input {
+    padding: 10px;
+    border-radius: 40px;
+    margin-top: 8px;
+}
+
+form label {
+    font-weight: 600;
+}
+
+form .email, .mensaje, .nombre {
+    display: flex;
+    flex-direction: column;
+}
+
+form .nombres, .email, .mensaje {
+    margin-bottom: 16px;
+}
+
+form .nombres {
+    display: flex;
+    max-width: 100%;
+}
+
+form .nombre {
+    width: 100%;
+}
+
+form .nombre:first-child {
+    margin-right: 10px;
+}
+
+.formulario {
+    padding-left: 25px;
+    width: 100%;
 }
 
 @media (max-width: 1100px) {
+
+
 
     header {
         display: none;
@@ -358,5 +459,25 @@ cite {
 
     .cita i {
         color: #ff74e4;
+    }
+
+    #proyectos ul {
+        justify-content: center;
+        margin: 50px 0;
+    }
+
+    #proyectos li {
+        margin: 10px;
+    }
+}
+
+@media (max-width: 900px) {
+    #contacto .contenedor {
+        flex-direction: column;
+        padding: 0;
+    }
+
+    form .nombres {
+        flex-direction: column;
     }
 }
