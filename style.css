@@ -46,6 +46,9 @@ header {
     color: #5c5c5e;
     text-decoration: none;
     text-transform: uppercase;
+    padding: 10px;
+    border-radius: 30px;
+    transition-duration: 0.2s;
 }
 
 .navbar .contacto a{
@@ -53,7 +56,6 @@ header {
     color: white;
     background-color: #4d2c88;
     padding: 10px 30px;
-    border-radius: 30px;
 }
 
 .navbar a:hover {
@@ -63,6 +65,11 @@ header {
 .navbar .contacto:hover a {
     color: white;
     background-color: #dd306d;
+}
+
+.navbar a:focus {
+    outline: #4d2c88;
+    box-shadow: #4d2c88 0px 0px 5.6px 0px, rgba(90, 125, 188, 0.05) 0px 5.6px 8px 0px;
 }
 
 #sobre {
@@ -102,6 +109,7 @@ h1 {
     -moz-background-clip: text;
     cursor: default;
     margin: 10px 0;
+    transition-duration: 0.3s;
 }
 
 h1:hover {
@@ -133,10 +141,16 @@ p {
     font-weight: 500;
     margin-top: 30px;
     padding: 16px 50px;
+    transition-duration: 0.2s;
 }
 
 #sobre .contenedor a:hover {
     background-color: #dd306d;
+}
+
+#sobre .contenedor a:focus {
+    outline: #4d2c88;
+    box-shadow: #4d2c88 0px 0px 5.6px 0px, rgba(90, 125, 188, 0.05) 0px 5.6px 8px 0px;
 }
 
 #conocimientos {
@@ -182,6 +196,7 @@ p {
     margin: 15px 0;
     border-radius: 10px;
     border: 1px lightgray solid;
+    transition-duration: 0.2s;
 }
 
 .card:hover {
@@ -192,9 +207,10 @@ p {
     font-size: 5rem;
 }
 
-.card h3 {
+.card p {
     margin-top: 16px;
     font-size: 20px;
+    font-weight: 600;
     color: #000000;
 }
 
@@ -286,14 +302,20 @@ cite {
     justify-content: space-between;
     border: 1px lightgray solid;
     border-radius: 8px;
+    transition-duration: 0.2s;
 }
 
 #proyectos .cards a:hover {
     border: 1px #4d2c88 solid;
 }
 
+#proyectos .cards a:hover p {
+    color: #4d2c88;
+}
+
 #proyectos .cards a:focus {
-    border: 2px #4d2c88 solid;
+    outline: 1px #4d2c88 solid;
+    box-shadow: #4d2c88 0px 0px 5.6px 0px, rgba(90, 125, 188, 0.05) 0px 5.6px 8px 0px;
 }
 
 #proyectos p {
@@ -314,7 +336,7 @@ cite {
     display: flex;
     justify-content: center;
     background-color: #f6f7fb;
-    padding: 200px;
+    padding: 150px 200px;
 }
 
 #contacto h2 {
@@ -327,6 +349,8 @@ cite {
     display: flex;
     background-color: white;
     padding: 50px;
+    border-radius: 20px;
+    border: 1px #d4d5d7 solid;
 }
 
 #contacto .contactame, .formulario {
@@ -348,7 +372,7 @@ cite {
 }
 
 .contactame li {
-    margin-bottom: 30px;
+    margin-bottom: 10px;
     display: flex;
     align-items: center;
 }
@@ -356,6 +380,12 @@ cite {
 .contactame li a {
     text-decoration: none;
     color: black;
+    padding: 10px;
+    border-radius: 30px;
+}
+
+.contactame a, i {
+    transition-duration: 0.2s;
 }
 
 .contactame li i {
@@ -365,19 +395,50 @@ cite {
     border-radius: 50%;
 }
 
-.contactame li:hover i {
+.contactame a:hover i {
     color: white;
     background-color: #4d2c88;
 }
 
-.contactame li:hover a {
+.contactame a:hover {
     color: #4d2c88;
+}
+
+.contactame a:focus {
+    outline: #4d2c88;
+    box-shadow: #4d2c88 0px 0px 5.6px 0px, rgba(90, 125, 188, 0.05) 0px 5.6px 8px 0px;
 }
 
 form input {
     padding: 10px;
     border-radius: 40px;
     margin-top: 8px;
+}
+
+form textarea {
+    border-radius: 20px;
+    padding: 10px;
+    margin-top: 8px;
+}
+
+form input, textarea {
+    font-size: 16px;
+    border: 1px #f6f7fb solid;
+    background-color: #f6f7fb;
+    transition-duration: 0.2s;
+}
+
+form input:focus:not(.submit), textarea:focus {
+    outline: 1px #4d2c88 solid;
+    box-shadow: #4d2c88 0px 0px 5.6px 0px, rgba(113, 144, 203, 0.05) 0px 5.6px 8px 0px;
+}
+
+form input:valid:not(.submit), textarea:valid {
+    outline: 1px green solid;
+}
+
+form input:valid:focus:not(.submit), textarea:valid:focus {
+    box-shadow: green 0px 0px 5.6px 0px, rgba(113, 144, 203, 0.05) 0px 5.6px 8px 0px;
 }
 
 form label {
@@ -411,9 +472,22 @@ form .nombre:first-child {
     width: 100%;
 }
 
+.submit {
+    width: 130px;
+    padding: 12px 0;
+    margin-top: 0;
+    color: white;
+    background-color: #4d2c88;
+    border: none;
+    cursor: pointer;
+    transition-duration: 0.2s;
+}
+
+.submit:hover {
+    background-color: #dd306d;
+}
+
 @media (max-width: 1100px) {
-
-
 
     header {
         display: none;
