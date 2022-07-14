@@ -7,10 +7,10 @@
 
 html {
     scroll-padding-top: 86px;
+    scroll-behavior: smooth;
 }
 
-.main-content {
-    scroll-behavior: smooth;
+.contenido-principal {
     margin-top: 70px;
 }
 
@@ -51,7 +51,7 @@ header {
     transition-duration: 0.2s;
 }
 
-.navbar .contacto a{
+.navbar .contacto-navbar a{
     margin: 0;
     color: white;
     background-color: #4d2c88;
@@ -62,7 +62,7 @@ header {
     color: #dd306d;
 }
 
-.navbar .contacto:hover a {
+.navbar .contacto-navbar:hover a {
     color: white;
     background-color: #dd306d;
 }
@@ -78,7 +78,7 @@ header {
     justify-content: center;
 }
 
-#sobre .contenedor {
+.sobre-contenedor {
     max-width: 1100px;
     display: flex;
     justify-content: space-between;
@@ -86,7 +86,7 @@ header {
     padding: 150px 0 300px 0;
 }
 
-#sobre .contenedor div {
+.sobre-contenedor div {
     width: 500px;
 }
 
@@ -101,7 +101,7 @@ header {
 h1 {
     font-size: 4.5em;
     font-weight: 900;
-    background: url(images/fondo-titulo.webp);
+    background: url(images/fondo-titulo.jpg);
     background-size: contain;
     -webkit-text-fill-color: transparent;
     -moz-text-fill-color: transparent;
@@ -131,7 +131,7 @@ p {
     color: #2e2e31;
 }
 
-#sobre .contenedor a {
+#sobre .sobre-contenedor a {
     display: inline-block;
     background-color: #4d2c88;
     color: white;
@@ -144,11 +144,11 @@ p {
     transition-duration: 0.2s;
 }
 
-#sobre .contenedor a:hover {
+#sobre .sobre-contenedor a:hover {
     background-color: #dd306d;
 }
 
-#sobre .contenedor a:focus {
+#sobre .sobre-contenedor a:focus {
     outline: #4d2c88;
     box-shadow: #4d2c88 0px 0px 5.6px 0px, rgba(90, 125, 188, 0.05) 0px 5.6px 8px 0px;
 }
@@ -160,18 +160,18 @@ p {
     align-items: center;
 }
 
-#conocimientos  .contenedor {
+#conocimientos .conocimientos-contenedor {
     padding: 100px;
     max-width: 1100px;
     text-align: center;
 }
 
-#conocimientos  .contenedor h2 {
+#conocimientos .conocimientos-contenedor h2 {
     font-size: 3rem;
     margin-bottom: 30px;
 }
 
-#conocimientos .contenedor p {
+#conocimientos .conocimientos-contenedor p {
     max-width: 400px;
     display: inline-block;
 }
@@ -183,7 +183,6 @@ p {
     display: flex;
     justify-content: center;
     justify-content: space-evenly;
-
 }
 
 .card {
@@ -196,11 +195,15 @@ p {
     margin: 15px 0;
     border-radius: 10px;
     border: 1px lightgray solid;
-    transition-duration: 0.2s;
+    transition-duration: 0.1s;
 }
 
 .card:hover {
     border: 1px #dd306d solid;
+}
+
+.card:hover p {
+    color: #dd306d;
 }
 
 .card i {
@@ -257,14 +260,14 @@ cite {
     justify-content: center;
 }
 
-#proyectos .contenedor {
+#proyectos .proyectos-contenedor {
     max-width: 1100px;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-#proyectos .texto {
+#proyectos .proyectos-texto {
     max-width: 1100px;
     text-align: center;
     width: 400px;
@@ -344,7 +347,7 @@ cite {
     margin-bottom: 30px;
 }
 
-#contacto .contenedor {
+#contacto .contacto-contenedor {
     max-width: 1100px;
     display: flex;
     background-color: white;
@@ -363,7 +366,7 @@ cite {
 
 .contactame p {
     color: black;
-    margin-right: 50px;
+    margin-right: 125px;
 }
 
 .contactame ul {
@@ -384,7 +387,7 @@ cite {
     border-radius: 30px;
 }
 
-.contactame a, i {
+.contactame a, .contactame i {
     transition-duration: 0.2s;
 }
 
@@ -421,23 +424,23 @@ form textarea {
     margin-top: 8px;
 }
 
-form input, textarea {
+form input, form textarea {
     font-size: 16px;
     border: 1px #f6f7fb solid;
     background-color: #f6f7fb;
     transition-duration: 0.2s;
 }
 
-form input:focus:not(.submit), textarea:focus {
+form input:focus:not(.submit), form textarea:focus {
     outline: 1px #4d2c88 solid;
     box-shadow: #4d2c88 0px 0px 5.6px 0px, rgba(113, 144, 203, 0.05) 0px 5.6px 8px 0px;
 }
 
-form input:valid:not(.submit), textarea:valid {
+form input:valid:not(.submit), form textarea:valid {
     outline: 1px green solid;
 }
 
-form input:valid:focus:not(.submit), textarea:valid:focus {
+form input:valid:focus:not(.submit), form textarea:valid:focus {
     box-shadow: green 0px 0px 5.6px 0px, rgba(113, 144, 203, 0.05) 0px 5.6px 8px 0px;
 }
 
@@ -445,25 +448,25 @@ form label {
     font-weight: 600;
 }
 
-form .email, .mensaje, .nombre {
+form .email, form .mensaje, form .nombres {
     display: flex;
     flex-direction: column;
 }
 
-form .nombres, .email, .mensaje {
+form .identidad, form .email, form .mensaje {
     margin-bottom: 16px;
 }
 
-form .nombres {
+form .identidad {
     display: flex;
     max-width: 100%;
 }
 
-form .nombre {
+form .nombres {
     width: 100%;
 }
 
-form .nombre:first-child {
+form .nombres:first-child {
     margin-right: 10px;
 }
 
@@ -487,6 +490,83 @@ form .nombre:first-child {
     background-color: #dd306d;
 }
 
+/* FOOTER */
+
+footer {
+    display: flex;
+    justify-content: center;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("images/fondo-footer.jpg");
+    background-position: center;
+}
+
+.footer-contenedor {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 75px;
+}
+
+footer .navbar-inferior ul, footer .lista-inferior {
+    display: flex;
+    list-style: none;
+}
+
+footer .navbar-inferior ul {
+    width: 450px;
+    justify-content: space-between;
+}
+
+footer .lista-inferior {
+    margin: 35px 0;
+    width: 225px;
+    justify-content: space-between;
+}
+
+footer .navbar-inferior a {
+    text-transform: uppercase;
+    border: 2px transparent solid;
+    border-radius: 30px;
+}
+
+footer .lista-inferior a {
+    padding: 12px;
+    border: 2px white solid;
+    border-radius: 50%;
+    color: #dd306d;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    transition-duration: 0.2s;
+}
+
+footer .lista-inferior i {
+    font-size: 1.1rem;
+}
+
+.footer-contenedor a, .footer-contenedor p {
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+}
+
+footer .navbar-inferior a:focus {
+    border: 2px #4d2c88 solid;
+    box-shadow: white 0px 0px 15px 0px;
+    outline: #4d2c88;
+}
+
+footer .lista-inferior a:hover {
+    background-color: #dd306d;
+    color: white;
+}
+
+footer .lista-inferior a:focus {
+    background-color: #dd306d;
+    color: white;
+    box-shadow: white 0px 0px 15px 0px;
+    outline: white;
+}
+
 @media (max-width: 1100px) {
 
     header {
@@ -497,12 +577,12 @@ form .nombre:first-child {
         display: block;
     }
 
-    #sobre .contenedor {
+    #sobre .sobre-contenedor {
         flex-direction: column;
         align-items: center;
     }
 
-    #sobre .contenedor div {
+    #sobre .sobre-contenedor div {
         text-align: center;
         width: 100%;
     }
@@ -551,7 +631,7 @@ form .nombre:first-child {
         padding: 0;
     }
 
-    form .nombres {
+    form .identidad {
         flex-direction: column;
     }
 }

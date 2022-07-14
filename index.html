@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="images/png" href="images/favicon.ico">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
@@ -13,20 +14,27 @@
     <title>Micaela Lay</title>
 </head>
 <body>
+    <!--EMPIEZA NAVBAR-->
+
     <header>
         <nav class="navbar">
             <ul>
                 <li><a href="#sobre">Hola</a></li>
                 <li><a href="#conocimientos">Conocimientos</a></li>
                 <li><a href="#proyectos">Proyectos</a></li>
-                <li class="contacto"><a href="#contacto">Contacto</a></li>
+                <li class="contacto-navbar"><a href="#contacto">Contacto</a></li>
             </ul>
         </nav>
     </header>
 
-    <div class="main-content">
+    <!--TERMINA NAVBAR-->
+
+    <div class="contenido-principal">
+
+    <!--EMPIEZA HERO-->
+
         <section id="sobre">
-            <div class="contenedor">
+            <div class="sobre-contenedor">
                 <div>
                     <p class="hola-soy">¡Hola! Soy</p>
                     <h1>Micaela Lay</h1>
@@ -38,12 +46,16 @@
                 </figure>
             </div>
         </section>
+
+    <!--TERMINA HERO-->
+
+    <!--EMPIEZA SECCIÓN CONOCIMIENTOS-->
     
         <section id="conocimientos">
-            <div class="contenedor">
+            <div class="conocimientos-contenedor">
                 <h2>Mis conocimientos</h2>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt ab placeat vitae dolores exercitationem, eum similique et.</p>
-                <div class="cards">
+                <div class="cards"> 
                     <ul>
                         <li class="card">
                             <i class="devicon-html5-plain colored"></i>
@@ -78,6 +90,10 @@
                 </div>
             </div>
         </section>
+
+    <!--TERMINA PRIMERA SECCIÓN-->
+
+    <!--EMPIEZA SECCIÓN CITA-->
     
         <section class="cita">
             <div>
@@ -88,10 +104,14 @@
                 <cite>Mica</cite>
             </div>
         </section>
+
+    <!--TERMINA SEGUNDA SECCIÓN-->
+
+    <!--EMPIEZA SECCIÓN PROYECTOS-->
     
         <section id="proyectos">
-            <div class="contenedor">
-                <div class="texto">
+            <div class="proyectos-contenedor">
+                <div class="proyectos-texto">
                     <h2>Mis proyectos</h2>
                     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Commodi reiciendis deserunt reprehenderit mollitia, optio voluptatem?</p>
                 </div>
@@ -149,9 +169,13 @@
                 </div>
             </div>
         </section>
+
+    <!--TERMINA TERCERA SECCIÓN-->
+
+    <!--EMPIEZA SECCIÓN CONTACTO-->
     
         <section id="contacto">
-            <div class="contenedor">
+            <div class="contacto-contenedor">
                 <div class="contactame">
                     <h2>Contactame</h2>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque quo nobis voluptatum tenetur! Id, nesciunt? Modi quasi repudiandae quam hic quo, qui cumque nam voluptates, ipsam, tempora eaque numquam eligendi.</p>
@@ -185,12 +209,12 @@
                 <div class="formulario">
                     <h2>Escribeme</h2>
                     <form action="#">
-                        <div class="nombres">
-                            <div class="nombre">
+                        <div class="identidad">
+                            <div class="nombres">
                                 <label for="nombre">Nombre *</label>
                                 <input required type="text" id="nombre" name="nombre" placeholder="p. ej.: Micaela">
                             </div>
-                            <div class="nombre">
+                            <div class="nombres">
                                 <label for="apellido">Apellido *</label>
                                 <input required type="text" id="apellido" name="apellido" placeholder="p. ej.: Lay">
                             </div>
@@ -208,41 +232,46 @@
                 </div>
             </div>
         </section>
+
+    <!--TERMINA CUARTA SECCIÓN-->
+
+    <!--EMPIEZA FOOTER-->
     
         <footer>
-            <nav>
-                <ul>
+            <div class="footer-contenedor">
+                <nav class="navbar-inferior">
+                    <ul>
+                        <li>
+                            <a href="#sobre">Hola</a>
+                        </li>
+                        <li>
+                            <a href="#conocimientos">Conocimientos</a>
+                        </li>
+                        <li>
+                            <a href="#proyectos">Proyectos</a>
+                        </li>
+                        <li>
+                            <a href="#contacto">Contacto</a>
+                        </li>
+                    </ul>
+                </nav>
+                <ul class="lista-inferior">
                     <li>
-                        <a href="#sobre">Hola</a>
+                        <a href="https://twitter.com/pyrolay" target="_blank"><i class="devicon-twitter-original"></i></a>
                     </li>
                     <li>
-                        <a href="#conocimientos">Conocimientos</a>
+                        <a href="https://github.com/pyrolay" target="_blank"><i class="devicon-github-original"></i></a>
                     </li>
                     <li>
-                        <a href="#proyectos">Proyectos</a>
+                        <a href="https://www.linkedin.com/in/micaela-lay/" target="_blank"><i class="devicon-linkedin-plain"></i></a>
                     </li>
                     <li>
-                        <a href="#contacto">Contacto</a>
+                        <a href="mailto:micalay003@gmail.com" target="_blank"><i class="fa-solid fa-envelope"></i></a>
                     </li>
                 </ul>
-            </nav>
-            <ul>
-                <li>
-                    <a href=""><i class="devicon-twitter-original"></i></a>
-                </li>
-                <li>
-                    <a href=""><i class="devicon-github-original"></i></a>
-                </li>
-                <li>
-                    <a href=""><i class="devicon-linkedin-plain"></i></a>
-                </li>
-                <li>
-                    <a href=""><i class="fa-solid fa-envelope"></i></a>
-                </li>
-            </ul>
-            <p>Hecho con ❤️ por Mica</p>
+                <p>Hecho con ❤️ por Mica</p>
+            </div>
         </footer>
     </div>
-    
 </body>
 </html>
