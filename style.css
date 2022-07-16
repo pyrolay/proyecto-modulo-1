@@ -339,7 +339,7 @@ cite {
     display: flex;
     justify-content: center;
     background-color: #f6f7fb;
-    padding: 150px 200px;
+    padding: 150px 50px;
 }
 
 #contacto h2 {
@@ -366,7 +366,7 @@ cite {
 
 .contactame p {
     color: black;
-    margin-right: 125px;
+    max-width: 500px;
 }
 
 .contactame ul {
@@ -378,6 +378,7 @@ cite {
     margin-bottom: 10px;
     display: flex;
     align-items: center;
+    justify-content: space-between;
 }
 
 .contactame li a {
@@ -393,7 +394,6 @@ cite {
 
 .contactame li i {
     color: #4d2c88;
-    margin-right: 10px;
     padding: 10px;
     border-radius: 50%;
 }
@@ -412,6 +412,10 @@ cite {
     box-shadow: #4d2c88 0px 0px 5.6px 0px, rgba(90, 125, 188, 0.05) 0px 5.6px 8px 0px;
 }
 
+form {
+    max-width: 100%;
+}
+
 form input {
     padding: 10px;
     border-radius: 40px;
@@ -425,6 +429,7 @@ form textarea {
 }
 
 form input, form textarea {
+    width: 100%;
     font-size: 16px;
     border: 1px #f6f7fb solid;
     background-color: #f6f7fb;
@@ -459,7 +464,6 @@ form .identidad, form .email, form .mensaje {
 
 form .identidad {
     display: flex;
-    max-width: 100%;
 }
 
 form .nombres {
@@ -467,7 +471,7 @@ form .nombres {
 }
 
 form .nombres:first-child {
-    margin-right: 10px;
+    margin-right: 40px;
 }
 
 .formulario {
@@ -489,8 +493,6 @@ form .nombres:first-child {
 .submit:hover {
     background-color: #dd306d;
 }
-
-/* FOOTER */
 
 footer {
     display: flex;
@@ -569,6 +571,10 @@ footer .lista-inferior a:focus {
 
 @media (max-width: 1100px) {
 
+    body {
+        overflow-x: hidden;
+    }
+
     header {
         display: none;
     }
@@ -595,7 +601,7 @@ footer .lista-inferior a:focus {
         width: 100%;
     }
 
-    #conocimientos .contenedor {
+    #conocimientos .conocimientos-contenedor {
         padding: 100px 0px;
     }
 
@@ -604,7 +610,7 @@ footer .lista-inferior a:focus {
     }
 
     #conocimiento ul {
-        margin: 50px 0;
+        margin: 50px 10px;
     }
 
     .cita {
@@ -615,9 +621,18 @@ footer .lista-inferior a:focus {
         color: #ff74e4;
     }
 
+    .proyectos-contendor {
+        align-items: center;
+    }
+
+    #proyectos .cards {
+        width: 100%;
+        display: flex;
+    } 
+
     #proyectos ul {
+        max-width: 100%;
         justify-content: center;
-        margin: 50px 0;
     }
 
     #proyectos li {
@@ -626,12 +641,120 @@ footer .lista-inferior a:focus {
 }
 
 @media (max-width: 900px) {
-    #contacto .contenedor {
+
+    #conocimientos .cards ul {
+        margin: 50px 0;
+    }
+
+    #contacto .contacto-contenedor {
         flex-direction: column;
-        padding: 0;
+    }
+
+    #contacto .contactame, .formulario {
+        max-width: 100%;
+    }
+
+    .contactame {
+        padding-right: 0px;
+    }
+
+    .formulario {
+        padding-left: 0px;
+    }
+
+    .contactame p {
+        max-width: 400px;
+    }
+
+    .contactame ul {
+        display: flex;
+        margin: 50px 0;
+        justify-content: space-between;
+    }
+
+    .contactame ul li {
+        display: flex;
+    }
+
+    form {
+        max-width: 90%;
+    }
+}
+
+@media (max-width: 600px) {
+
+    #contacto {
+        padding: 100px 0px;
+    }
+
+    .contactame ul {
+        display: unset;
+    }
+
+    .contactame p {
+        margin: 30px 0;
+    }
+
+    footer .navbar-inferior {
+        display: none;
+    }
+}
+
+@media (max-width: 500px) {
+
+    
+    #conocimientos .conocimientos-contenedor h2, #proyectos h2 {
+        font-size: 2.5rem;
+        margin: 0;
+    }
+
+    #proyectos .proyectos-texto {
+        width: unset;
+    }
+
+    #proyectos ul {
+        margin: 50px 10px;
+    }
+
+    #proyectos li {
+        max-width: 332px;
+        margin: 10px 0;
+    }
+
+    #contacto .contacto-contenedor {
+        padding: 50px 10px;
+        border: none;
+        border-radius: unset;
     }
 
     form .identidad {
+        display: flex;
         flex-direction: column;
     }
+
+    .footer-contenedor {
+        padding: 75px 0;
+    }
+
+}
+
+@media (max-width: 300px) {
+
+    h1 {
+        font-size: 3rem;
+    }
+
+    #conocimientos .conocimientos-contenedor h2, #proyectos h2, #contacto h2 {
+        font-size: 2rem;
+        margin: 0;
+    }
+
+    #proyectos li {
+        width: unset;
+    }
+
+    #proyectos img {
+        height: unset;
+    }
+
 }
