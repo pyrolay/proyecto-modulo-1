@@ -736,7 +736,7 @@ footer .lista-inferior a:focus {
     }
 
     #proyectos li {
-        width: unset;
+        max-width: 100%;
         margin: 10px 0;
     }
 
