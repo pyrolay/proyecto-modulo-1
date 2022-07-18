@@ -5,6 +5,25 @@
     line-height: 1.5;
 }
 
+* {
+    scrollbar-width: auto;
+    scrollbar-color: #4d2c88 #ffffff;
+}
+
+*::-webkit-scrollbar {
+    width: 16px;
+}
+
+*::-webkit-scrollbar-track {
+    background: #ffffff;
+}
+
+*::-webkit-scrollbar-thumb {
+    background-color: #4d2c88;
+    border-radius: 10px;
+    border: 3px solid #ffffff;
+}
+
 html {
     scroll-padding-top: 86px;
     scroll-behavior: smooth;
@@ -713,15 +732,16 @@ footer .lista-inferior a:focus {
     }
 
     #proyectos ul {
-        margin: 50px 10px;
+        margin: 50px 0px;
     }
 
     #proyectos li {
-        max-width: 332px;
+        width: unset;
         margin: 10px 0;
     }
 
     #contacto .contacto-contenedor {
+        box-sizing: border-box;
         padding: 50px 10px;
         border: none;
         border-radius: unset;
@@ -738,7 +758,7 @@ footer .lista-inferior a:focus {
 
 }
 
-@media (max-width: 300px) {
+@media (max-width: 320px) {
 
     h1 {
         font-size: 3rem;
